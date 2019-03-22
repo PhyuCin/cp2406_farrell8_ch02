@@ -10,8 +10,8 @@ public class InchesToFeetInteractive {
         int inchesToConvert = Integer.parseInt(stringInchesToConvert);
         int feet = inchesToConvert / INCHESINFOOT;
         int inches = inchesToConvert % INCHESINFOOT;
-
-        System.out.println("There are " + feet + " feets and " + inches + " inches in " + inchesToConvert + " inches.");
+        JOptionPane.showMessageDialog(null,
+                "There are " + feet + " feets and " + inches + " inches in " + inchesToConvert + " inches.");
 
     }
 }
