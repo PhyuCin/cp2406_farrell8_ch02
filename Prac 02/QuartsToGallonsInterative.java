@@ -5,7 +5,7 @@ public class QuartsToGallonsInterative {
         final int QUARTSINGALLON = 4;
         String stringNumQuartsNeeded = JOptionPane.showInputDialog(null,
                 "Enter the number of quarts needed for the job:",
-                "Purchases",
+                "Quarts needed",
                 JOptionPane.INFORMATION_MESSAGE);
         int numQuartsNeeded = Integer.parseInt(stringNumQuartsNeeded);
         int quarts = numQuartsNeeded % QUARTSINGALLON;
