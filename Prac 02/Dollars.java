@@ -8,22 +8,22 @@ public class Dollars {
 
         Scanner input = new Scanner(System.in);
         System.out.print("Enter the number of dollars: ");
-        int dollars = input.nextInt();
-        int cents = 100 * dollars;
+        double dollars = input.nextDouble();
+        double cents = 100 * dollars;
 
-        int twenties = cents / TWENTYCENTS;
+        double twenties = Math.floor(cents / TWENTYCENTS);
         cents = cents - (twenties * TWENTYCENTS);
 
-        int tens = cents / TENCENTS;
+        double tens = Math.floor(cents / TENCENTS);
         cents = cents - (tens * TENCENTS);
 
-        int fives = cents / FIVECENTS;
+        double fives = Math.floor(cents / FIVECENTS);
         cents = cents - (fives * FIVECENTS);
 
-        int ones = cents;
+        double ones = cents;
 
-        System.out.println("There are " + twenties + " twenty cents, " + tens + " ten cents, " + fives +
-                " five cents and " + ones + " one cents in $" + dollars);
+        System.out.println("There are " + Math.round(twenties) + " twenty cents, " + Math.round(tens) + " ten cents, " +
+                Math.round(fives) + " five cents and " + Math.round(ones) + " one cents in $" + dollars);
 
     }
 }
