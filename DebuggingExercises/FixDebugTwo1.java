@@ -7,6 +7,6 @@ public class FixDebugTwo1
       char oneChar = 'A';
       System.out.println("The int is " + oneInt);
       System.out.println("The double is " + oneDouble);
-      System.out.print("The char is " + oneChar);
+      System.out.println("The char is " + oneChar);
    }
 }
